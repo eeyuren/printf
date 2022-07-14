@@ -2,14 +2,13 @@
 
 /**
  * _puts - prints a string with newline
- * @str: string to print
+ * @str: the string to print
  *
  * Return:( str-a)
  */
 int _puts(char *str)
 {
-/*declaration of variables*/
-char *a = str;
+char *a = str;/*declaration of variables*/
 
 while (*str)
 {
@@ -38,5 +37,6 @@ i = 0;
 if (c != BUF_FLUSH)
 {
 buf[i++] = c;
+}
 return (1);
 }
