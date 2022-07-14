@@ -33,7 +33,7 @@ init_params(&params, ap);
 /*check for the % specifier */
 if (*p != '%')
 {
-sum += _putchar(*p);
+sum += putchar(*p);
 continue;
 }
 start = p;
@@ -59,7 +59,7 @@ else
 sum += get_print_func(p, ap, &params);
 }
 }
-_putchar(BUF_FLUSH);
+putchar(BUF_FLUSH);
 va_end(ap);
 return (sum);
 }
